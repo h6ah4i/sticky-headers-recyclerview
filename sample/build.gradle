@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'aar-link-sources'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion as Integer
@@ -20,5 +21,6 @@ android {
 dependencies {
     compile "com.android.support:recyclerview-v7:21.0.0"
     compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.6.0'
+    aarLinkSources 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.6.0:sources@jar'
     compile project(':library')
 }
