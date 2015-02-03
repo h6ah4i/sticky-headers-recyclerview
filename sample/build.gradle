@@ -19,5 +19,6 @@ android {
 
 dependencies {
     compile "com.android.support:recyclerview-v7:21.0.0"
+    compile 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.6.0'
     compile project(':library')
 }
